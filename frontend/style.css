@@ -1,0 +1,52 @@
+body{ 
+    background-image: linear-gradient(black, purple, black);
+    background-attachment: fixed;
+}
+h1 {
+    color: white !important;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-decoration: underline;
+    padding: 60px;
+}
+#Kezdolap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    margin: 20px;
+}
+#Kezdolap a {
+    color: white;
+    text-decoration: none; 
+}
+#Kezdolap a:hover {
+    color: grey;
+}
+.tablazat {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: bold;
+}
+
+.tablazat th {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: bold;
+    text-align: center;
+    text-decoration: underline;
+    margin: 10px;
+    padding: 10px;
+}
+
+.tablazat td {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: bold;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}

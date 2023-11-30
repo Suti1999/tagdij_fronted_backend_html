@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="A tagdíjak lekérdezése adatbázisból">
+        <meta name="keywords" content="Lekérdezés, Adatbázis, Weblap">
+        <meta name="author" content="Ozsvárt Bence">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tagdíj | Kezdőlap</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha1/css/bootstrap.min.css"integrity="sha512-72OVeAaPeV8n3BdZj7hOkaPSEk/uwpDkaGyP4W2jSzAC8tfiO4LMEDWoL3uFp5mcZu+8Eehb4GhZWFwvrss69Q=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const osszesUgyfelButton = document.getElementById('OsszesUgyfel');
+            
+            osszesUgyfelButton.addEventListener('click', function() {
+                window.location.href = 'osszesugyfel.html';
+            });
+        });
+    </script>
+    <body>
+        <h1>Műveletek</h1>
+        <div class="container">
+            <div class="row row p-4 justify-content-center">
+                <button class="btn btn-outline-warning col-2 m-2" id="OsszesUgyfel">ÖSSZES ÜGYFÉL</button>
+                <button class="btn btn-outline-primary col-2 m-2" href="egyugyfeladat.html" id="EgyUgyfel">EGY ÜGYFÉL ADATA</button>
+                <button class="btn btn-outline-success col-2 m-2" href="ugyfelrogzites.html" id="UjUgyfel">ÚJ ÜGYFÉL RÖGZITÉS</button>
+                <button class="btn btn-outline-danger col-2 m-2" href="ugyfeltorles.html" id="UgyfelTorles">ÜGYFÉL TÖRLÉS</button>
+                <button class="btn btn-outline-danger col-2 m-2" href="ugyfeladattorles.html" id="UgyfelAdatTorles">ÜGYFÉL ADATTÖRLÉS</button>
+                <button class="btn btn-outline-success col-2 m-2" href="ugyfeladatmodositas.html" id="UgyfelAdatModositas">ÜGYFÉL ADATMÓDOSÍTÁS</button>
+            </div>
+        </div>        
+        <script src="/backend/index.js"></script>
+    </body>
+</html>
